@@ -1,11 +1,10 @@
-//import './css/jquery.dataTables.css'
-import 'datatables.net-dt/css/jquery.datatables.css'
 import React, {Component} from 'react'
-//import App from "./App";
+import 'datatables.net-dt/css/jquery.dataTables.css'
+
+import 'datatables.net-bs/css/dataTables.bootstrap.css'
 
 const $ = require('jquery')
 $.DataTable = require('datatables.net')
-require( 'datatables.net-bs' )( window, $ );
 
 export class Table extends Component {
     componentDidMount() {
