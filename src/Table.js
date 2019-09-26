@@ -1,6 +1,7 @@
 //import './css/jquery.dataTables.css'
+import 'datatables.net-dt/css/jquery.datatables.css'
 import React, {Component} from 'react'
-import App from "./App";
+//import App from "./App";
 
 const $ = require('jquery')
 $.DataTable = require('datatables.net')

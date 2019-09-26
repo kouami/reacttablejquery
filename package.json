@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "datatables.net-bs": "^1.10.19",
+    "datatables.net-dt": "^1.10.19",
     "react": "^16.9.0",
     "react-data-table-component": "^3.5.0",
     "react-dom": "^16.9.0",
