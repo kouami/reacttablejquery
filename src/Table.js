@@ -26,8 +26,18 @@ export class Table extends Component {
 
     componentWillUnmount() {
     }
+    
+    updateTableData(data) {
+        this.$el.dataTable().api().clear();
+        this.$el.dataTable().api().rows.add(data);
+        this.$el.dataTable().api().draw();
+    }
 
     render() {
+        if(this.$el) {
+            this.updateTableData(this.props.data)
+        }
+        
         return (
             <div>
                 <table className="display" width="100%" ref = {el => this.el = el }></table>
